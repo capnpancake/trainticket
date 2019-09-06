@@ -1,7 +1,6 @@
 package model;
 
-import java.util.Date;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Ticket {
 
