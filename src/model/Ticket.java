@@ -16,6 +16,7 @@ public class Ticket {
     }
 
     private String generatePNR(){
+    //
 
     }
 
@@ -79,4 +80,15 @@ public class Ticket {
     public void setPassengers(TreeMap<Passenger, Integer> passengers) {
         this.passengers = passengers;
     }
+
+
+
+
+    public static void main(String[] args) {
+
+
+    }
+
 }
+
+

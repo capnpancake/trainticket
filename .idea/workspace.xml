@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainticket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/trainticket.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +105,12 @@
     <option name="height" value="867" />
   </component>
   <component name="ProjectId" id="1QTea0tUJzqSFLwkJbvOu1U4Mjl" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ojdbc14.jar!/" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -223,6 +230,9 @@
       <map>
         <entry key="MAIN">
           <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
             <State>
               <option name="RECENTLY_FILTERED_USER_GROUPS">
                 <collection />
