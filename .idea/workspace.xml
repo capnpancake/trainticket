@@ -6,6 +6,9 @@
       <change afterPath="$PROJECT_DIR$/src/dataAccessLayer/TrainDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Train.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/TrainDAO.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,6 +154,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
   </component>
+  <component name="ProjectId" id="1QTea0tUJzqSFLwkJbvOu1U4Mjl" />
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -168,11 +172,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="274ee608-defa-473b-9572-be47b7bcc28b" name="Default Changelist" comment="" />
-      <created>1567794641471</created>
+      <changelist id="33eb8b92-6e8a-44ad-88d6-b2dd43b0abbc" name="Default Changelist" comment="" />
+      <created>1567799072959</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1567794641471</updated>
+      <updated>1567799072959</updated>
     </task>
     <servers />
   </component>
