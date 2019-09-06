@@ -1,5 +1,7 @@
 package model;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Date;
 import java.util.TreeMap;
 
@@ -17,6 +19,7 @@ public class Ticket {
     }
 
     private String generatePNR(){
+    //
 
     }
 
@@ -80,4 +83,15 @@ public class Ticket {
     public void setPassengers(TreeMap<Passenger, Integer> passengers) {
         this.passengers = passengers;
     }
+
+
+
+
+    public static void main(String[] args) {
+
+
+    }
+
 }
+
+
