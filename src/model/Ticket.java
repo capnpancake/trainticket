@@ -7,6 +7,6 @@ public class Ticket {
     private String pnr;
     private Date travelDate;
     private Train train;
-    
+
 
 }
