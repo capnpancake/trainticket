@@ -3,9 +3,7 @@ package model;
 public class Train {
 
     private int trainNo;
-    private String trainName;
-    private String source;
-    private String destination;
+    private String trainName, source, destination;
     private double ticketPrice;
 
     public Train(int trainNo, String trainName, String source, String destination, double ticketPrice) {

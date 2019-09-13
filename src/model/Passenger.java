@@ -1,6 +1,6 @@
 package model;
 
-public class Passenger {
+public class Passenger implements Comparable{
 
     private String name;
     private int age;
@@ -34,5 +34,18 @@ public class Passenger {
 
     public void setGender(char gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Passenger p = (Passenger) o;
+        for (char c : name.toCharArray()){
+            for (char ch : p.getName().toCharArray()){
+                if (ch == c){continue;}
+                if (ch > c){return -1;}
+                if (ch < c){return 1;}
+            }
+        }
+        return 0;
     }
 }
