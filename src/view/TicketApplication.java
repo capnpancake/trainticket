@@ -14,11 +14,18 @@ public class TicketApplication {
         Scanner scan = new Scanner(System.in);
         TrainDAO dao = new TrainDAO();
 
-        System.out.println("Enter the date (dd/MM/yyyy) you will be traveling on : ");
+        System.out.println("Enter the date (dd/MM/yyyy) you will be traveling on: ");
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         Date date =  new Date();
+        Date current = new Date();
         try {
             date = sdf.parse(scan.nextLine());
+            while (date.compareTo(current) < 0){
+                System.out.println("Please enter a date after today's date or 0 to exit: ");
+                String input = scan.nextLine();
+                if (input.equals("0")){return;}
+                date = sdf.parse(input);
+            }
         } catch (ParseException e) {
             e.printStackTrace();
         }

@@ -17,7 +17,7 @@ public class Ticket {
     private String pnr;
     private Date travelDate;
     private Train train;
-    private TreeMap<Passenger, Double> passengers;
+    private TreeMap<Passenger, Double> passengers = new TreeMap<>();
 
     public Ticket(Date travelDate, Train train) {
         this.travelDate = travelDate;
@@ -29,9 +29,9 @@ public class Ticket {
     private String generatePNR(){
         // return a string formatted as SD_YYYYMMDD_100
         // where S = train.source, D = train.destination, and 100 is the counter
-        DateFormat df = new SimpleDateFormat("yyyymmdd");
-        return train.getSource().charAt(0) +
-                train.getDestination().charAt(0) + "_" +
+        DateFormat df = new SimpleDateFormat("yyyyMMdd");
+        return Character.toString(train.getSource().charAt(0)) +
+                Character.toString(train.getDestination().charAt(0)) + "_" +
                 df.format(travelDate) + "_" +
                 counter;
     }
@@ -71,21 +71,21 @@ public class Ticket {
     private StringBuilder generateTicket(){
         // set up template and fill in upper portion
         StringBuilder td = new StringBuilder()
-                .append("PNR          : ").append(pnr).append("\n")
-                .append("Tran No.     : ").append(train.getTrainNo()).append("\n")
-                .append("Train Name   : ").append(train.getTrainName()).append("\n")
-                .append("From         : ").append(train.getSource()).append("\n")
-                .append("To           : ").append(train.getDestination()).append("\n")
-                .append("Travel Date  : ").append(travelDate).append("\n\n")
-                .append("Passengers:" + "\n")
-                .append("Name\t\tAge\tGender\tFare");
+                .append("PNR          : ").append(pnr).append("\r\n")
+                .append("Tran No.     : ").append(train.getTrainNo()).append("\r\n")
+                .append("Train Name   : ").append(train.getTrainName()).append("\r\n")
+                .append("From         : ").append(train.getSource()).append("\r\n")
+                .append("To           : ").append(train.getDestination()).append("\r\n")
+                .append("Travel Date  : ").append(travelDate).append("\r\n\r\n")
+                .append("Passengers:" + "\r\n")
+                .append("Name\t\tAge\tGender\tFare\r\n");
 
         // use a foreach to iterate through the treemap and print all passengers
         for (Map.Entry<Passenger, Double> entry : passengers.entrySet()){
             String name = entry.getKey().getName();
             int age = entry.getKey().getAge();
             char gender = entry.getKey().getGender();
-            td.append(name).append("\t").append(age).append("\t").append(gender).append("\t").append(entry.getValue());
+            td.append(name).append("\t\t").append(age).append("\t").append(gender).append("\t").append(entry.getValue()).append("\r\n");
         }
 
         // finish by showing total price

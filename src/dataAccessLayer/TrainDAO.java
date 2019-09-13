@@ -17,8 +17,9 @@ public class TrainDAO {
         try {
             Class.forName(DRIVER_NAME);
             con = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            con.createStatement();
+            stmt = con.createStatement();
         } catch (SQLException | ClassNotFoundException e) {
+            System.out.println("Database connection not established.");
             e.printStackTrace();
         }
     }
@@ -32,11 +33,11 @@ public class TrainDAO {
             rs.next();
 
             // get properties from query
-            int no = rs.getInt(1);
-            String name = rs.getString(2);
-            String source = rs.getString(3);
-            String dest = rs.getString(4);
-            double price = rs.getDouble(5);
+            int no = rs.getInt("train_no");
+            String name = rs.getString("train_name");
+            String source = rs.getString("source");
+            String dest = rs.getString("destination");
+            double price = rs.getDouble("ticket_price");
 
             return new Train(no, name, source, dest, price);
         } catch (SQLException e) {
